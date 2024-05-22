@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaguaSkrip.com</title>
+    <link rel="stylesheet" href="estilos.css">  
+    <style>
+        .contenedor {
+          display: flex;
+          justify-content: center; /* Alinea los hijos horizontalmente al centro */
+          align-items: center; /* Alinea los hijos verticalmente al centro */
+          height: 100vh; /* Altura del contenedor */
+          background-color: #011721; /* Color de fondo */
+        }
+    
+        .contenedor1, .contenedor2 {
+          width: 45%; /* O cualquier otro ancho que necesites */
+          height: 300px; /* Altura fija para ambos contenedores */
+          margin: 10px; /* Espacio entre los contenedores */
+          padding: 20px; /* Relleno opcional */
+          background-color: #f0f0f0; /* Color de fondo */
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+          display: flex; /* Para centrar el contenido del div */
+          align-items: center; /* Centra el contenido verticalmente */
+        }
+
+        .contenedor1 img, .contenedor2 img {
+          max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+          max-height: 100%; /* Asegura que las imágenes no excedan la altura del contenedor */
+        }
+    </style>
+</head>
+<body>
+    <!-- Representa el encabezado -->
+    <header class="flex bg-[#011721] justify-between items-center py-4 px8"> 
+        <img src="/static/Logo Jagua Script.jpeg" alt="" class="h-40 w-50">
+        <!-- Barra de navegacion -->
+        <nav>
+            <ul class="flex space-x-8 text-xl font-bold text-[#FFDD33]">
+                <li><a href="">Contactanos (021) 495-778</a></li>
+                <li><a href="">WhatsApp 0985701545</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!-- El div como un navegador -->
+        <div class="flex flex-col h-1/2 w-3/4 mx-auto items-center justify-between py-20">
+            <!-- Etiqueta principal del titulo -->
+            <h1 class="text-6xl font-semibold text-center">Asegura tu hogar de la manera más facil y rapida</h1>
+            <!-- Subtitulo -->
+            <h2 class="text-5xl w-11/12 text-center py-10">Tu bienestar es lo primordial, conoce nuestra manera de trabajar y nuestros servicios</h2>
+            <!-- Entre el inicio y cierre de mi etiqueta coloco el texto que quiero que me muestre -->
+            <button class="text-2xl font-bold w-60 h-20 bg-[#FFE333] rounded-3xl"> <a href=""> Solicitar asesoramiento</a> </button>
+        </div>
+
+        <div class="contenedor">
+            <div class="contenedor1">
+                <img src="/static/sensor de movimiento.png" alt="Sensor de movimiento" class="h-50 w-60">
+                <h1 class="text-2xl font-semibold text-center">Sensor de movimientos: Detecta movientos que llegan a la central receptora de alarmas</h1>
+            </div>
+            <div class="contenedor2">
+                <img src="/static/teclado alarma.png" alt="Teclado de alarma" class="h-50 w-60">
+                <h2 class="text-2xl font-semibold text-center">Tablero de alarma: Controla puertas y ventanas en caso de apertura y ademas puedes elegir que zonas de tu casa quiere proteger </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#f0f0f0] text-[#rgba] py-20">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex flex-col items-start">
+                <img src="/static/Logo Jagua Script.jpeg" alt="Logo Jagua Script" class="h-40 w-50 mb-4">
+                <p class="text-xl">&copy; 2024 JaguaSkrip.com</p>
+            </div>
+            <div class="flex flex-col items-end">
+                <nav>
+                    <ul class="flex space-x-6 text-xl">
+                        <li><a href="http://127.0.0.1:5500/templates/prueba.html">Inicio</a></li>
+                        <li><a href="prueba3.html">Servicios</a></li>
+                        <li><a href="prueba2.html">Nosotros</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
